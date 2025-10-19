@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.profile-card {
+  display: grid;
+  place-items: center;
+  padding: 1em;
+  text-align: center;
+  background: #eeecec;
+  max-width: 992px;
+  margin: auto;
+}
+
+.profile-card .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profile-card .bio {
+  text-align: center;
+  margin-block: 20px;
+}
+
+.profile-card .bio p {
+  color: dodgerblue;
+  word-wrap: break-word;
+}
+
+section {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+section > .hobbies,
+section > .dislikes {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+section li {
+  list-style: none;
+  padding: 1em 2em;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+
+.socials img {
+  width: 50px;
+  height: 50px;
+}
+
+.socials .icon {
+  list-style: none;
+  margin: 30px;
+}
+
+@media (max-width: 400px) {
+  section {
+    text-align: center;
+  }
+  section > .hobbies,
+  section > .dislikes {
+    display: block;
+  }
+}

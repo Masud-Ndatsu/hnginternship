@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <article class="profile-card" data-testid="test-profile-card">
+      <header>
+        <figure data-testid="test-user-avatar">
+          <img class="avatar" src="images/biggie.png" alt="My Profile" />
+        </figure>
+
+        <div class="bio">
+          <h3 class="name" data-testid="test-user-name">Mas'ud Ndatsu</h3>
+          <p class="title" data-testid="test-user-title">Software Developer</p>
+          <p data-testid="test-user-time">
+            Current time: <span class="current-time"></span> ms
+          </p>
+        </div>
+        <p class="desc" data-testid="test-user-bio">
+          Passionate software engineer with a love for creating innovative
+          solutions and exploring new technologies
+        </p>
+
+        <ul class="socials" data-testid="test-user-social-links">
+          <li class="icon" data-testid="test-user-social-twitter">
+            <i class="fa-brands fa-twitter"></i>
+            <p>Twitter</p>
+          </li>
+          <li class="icon" data-testid="test-user-social-github">
+            <i class="fa-brands fa-github"></i>
+            <p>Github</p>
+          </li>
+          <li class="icon" data-testid="test-user-social-linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+            <p>LinkedIn</p>
+          </li>
+        </ul>
+      </header>
+      <main class="personality">
+        <section>
+          <h2>Hobbies</h2>
+          <ul data-testid="test-user-hobbies" class="hobbies">
+            <li>Coding</li>
+            <li>Photography</li>
+            <li>Music</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Dislikes</h2>
+          <ul data-testid="test-user-dislikes" class="dislikes">
+            <li>Negetivity</li>
+          </ul>
+        </section>
+      </main>
+    </article>
+  </body>
+</html>
