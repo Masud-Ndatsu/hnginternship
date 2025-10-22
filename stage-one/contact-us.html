@@ -34,7 +34,9 @@
       <form action="">
         <div>
           <label for="fullName">Full Name</label>
+          <small id="fullNameError"></small>
           <input
+            aria-describedby="fullNameError"
             data-testid="test-contact-name"
             id="fullName"
             type="text"
@@ -44,7 +46,9 @@
         </div>
         <div>
           <label for="email">Email</label>
+          <small id="emailError"></small>
           <input
+            aria-describedby="emailError"
             data-testid="test-contact-email"
             id="email"
             type="email"
@@ -54,7 +58,9 @@
         </div>
         <div>
           <label for="subject">Subject</label>
+          <small id="subjectError"></small>
           <input
+            aria-describedby="subjectError"
             data-testid="test-contact-subject"
             id="subject"
             type="text"
@@ -64,8 +70,9 @@
         </div>
         <div>
           <label for="message">Message</label>
+          <small id="messageError"></small>
           <textarea
-            name=""
+            aria-describedby="messageError"
             data-testid="test-contact-message"
             id="message"
             cols="30"

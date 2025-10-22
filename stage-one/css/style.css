@@ -48,7 +48,7 @@ section > .dislikes {
   flex-wrap: wrap;
 }
 
-section li {
+.profile-card section > li {
   list-style: none;
   padding: 1em 2em;
   border: 1px solid #ccc;
