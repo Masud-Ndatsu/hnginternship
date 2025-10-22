@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Stage One - Task</h1>
+
+      <ul>
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./contact-us.html">Contact Us</a>
+        </li>
+        <li>
+          <a href="./about-me.html">About Me</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="form-wrapper">
+      <h1>Contact Us</h1>
+      <form action="">
+        <div>
+          <label for="fullName">Full Name</label>
+          <input
+            data-testid="test-contact-name"
+            id="fullName"
+            type="text"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            data-testid="test-contact-email"
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div>
+          <label for="subject">Subject</label>
+          <input
+            data-testid="test-contact-subject"
+            id="subject"
+            type="text"
+            placeholder="Enter the subject"
+            required
+          />
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea
+            name=""
+            data-testid="test-contact-message"
+            id="message"
+            cols="30"
+            rows="5"
+            placeholder="Enter your message (min 10 characters)"
+            required
+          ></textarea>
+        </div>
+
+        <button data-testid="test-contact-submit" type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

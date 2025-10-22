@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
 .profile-card {
   display: grid;
   place-items: center;
@@ -10,7 +17,7 @@
   text-align: center;
   background: #eeecec;
   max-width: 992px;
-  margin: auto;
+  margin: 2rem auto;
 }
 
 .profile-card .avatar {
@@ -66,4 +73,89 @@ section li {
   section > .dislikes {
     display: block;
   }
+}
+
+/* Navbar Styles */
+
+.navbar {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ccc;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+/* Contact Us Page */
+
+.form-wrapper {
+  display: grid;
+  place-items: center;
+  padding: 4rem 0;
+}
+
+.form-wrapper form {
+  max-width: 650px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.form-wrapper > form > div {
+  margin: 15px 0;
+}
+
+.form-wrapper > form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid;
+  outline: none;
+}
+
+.form-wrapper > form > div > label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-wrapper > form button {
+  background-color: #005bb3;
+  color: #fff;
+}
+
+/* ABOUT ME */
+
+.about-me-wrapper {
+  padding: 2rem 1rem;
+  max-width: 992px;
+  margin: auto;
+  text-align: justify;
+}
+
+.about-me-wrapper > article {
+  margin-bottom: 25px;
+}
+
+.about-me-wrapper article h1 {
+  margin: 1rem 0;
+}
+
+.about-me-wrapper > article > p {
+  line-height: 1.3;
 }
