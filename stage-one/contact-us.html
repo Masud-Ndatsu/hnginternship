@@ -29,9 +29,24 @@
       </ul>
     </nav>
 
-    <section class="form-wrapper">
+    <section class="form-wrapper" style="position: relative">
+      <article class="dialog">
+        <p style="margin-bottom: 20px">You have submitted successfully</p>
+        <button
+          style="
+            padding: 0.5em 1em;
+            background-color: #005bb3;
+            outline: none;
+            border: 1px solid;
+            color: #ccc;
+          "
+          class="dialog-button"
+        >
+          close
+        </button>
+      </article>
       <h1>Contact Us</h1>
-      <form action="">
+      <form class="contact-form">
         <div>
           <label for="fullName">Full Name</label>
           <small id="fullNameError"></small>
@@ -79,11 +94,20 @@
             rows="5"
             placeholder="Enter your message (min 10 characters)"
             required
+            minlength="10"
           ></textarea>
         </div>
 
-        <button data-testid="test-contact-submit" type="submit">Submit</button>
+        <button
+          class="contact-submit"
+          data-testid="test-contact-submit"
+          type="submit"
+        >
+          Submit
+        </button>
       </form>
     </section>
+
+    <script src="./js/script.js" defer></script>
   </body>
 </html>
