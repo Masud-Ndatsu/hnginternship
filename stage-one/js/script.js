@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const messageText = messageInput.value.trim();
-    if (!messageText) {
+    if (!messageText && messageInput.length < 1) {
       showError(errors.message, "Message is required");
       isValid = false;
     } else if (messageText.length < 10) {
